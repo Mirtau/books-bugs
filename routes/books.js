@@ -23,5 +23,9 @@ router.get('/books/show', function(req, res, next) {
 router.get('/books/edit', function(req, res, next) {
   res.render('books/edit', {book: book});
 });
+router.post('/views/books/new', function(res,req){
+  res.render('books/show', {book:book})
+  console.log(here);
+})
 
 module.exports = router;
